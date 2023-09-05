@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>滑稽</title>
+    <style>
+        .bg{
+            position: fixed;
+            width: 100vw;
+            height: 100vh;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            user-select: none;
+        }
+        .bg img{
+            width: 100%;
+            height: 100vh;
+            object-fit: cover;
+        }
+        .container{
+            max-width: 600px;
+            min-height: 500px;
+            margin: 100px auto;
+            border-radius: 15px;
+            border: .9px solid #ccc;
+            padding: 20px;
+            box-sizing: border-box;
+            position: relative;
+            background-color: #ffffffc8;
+            backdrop-filter: blur(10px);
+        }
+        .avatar{
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            border: 4px solid #fff;
+            background-color: #fff;
+            overflow: hidden;
+            position: absolute;
+            top: -50px;
+            left: 50%;
+            transform: translateX(-50%);
+            transition: .5s;
+            user-select: none;
+        }
+        .avatar:hover{
+            transform: translateX(-50%) rotate(360deg);
+        }
+        .avatar img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .head{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .head span{
+            padding: 5px 10px;
+            border-radius: 5px;
+            background-color: #168bff;
+            color: #ffffff;
+            display: block;
+            margin: 10px;
+        }
+        .content{
+            margin-top: 50px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="avatar">
+            <img src="https://i2.hdslb.com/bfs/archive/6a93878ac54a7c69f7ab2e5b93e3303d8824d615.jpg" alt="">
+        </div>
+        <div class="content">
+            <div class="head">
+                <span>姓名：张三</span>
+                <span>学号：114514</span>
+                <span>爱好：原神</span>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta ipsa nisi facere, earum consequatur repellat aliquid iste debitis ullam perspiciatis quae ipsum voluptates odit quo sunt similique quia libero sed.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum perspiciatis excepturi delectus dolorem sit illum nulla. At vitae sequi eligendi, suscipit dolore labore tempora corporis delectus rem ex commodi voluptate!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, libero nesciunt aut tempora quam nostrum nihil numquam quia eius, incidunt nobis! Nesciunt dignissimos velit hic, praesentium eaque beatae assumenda sunt!</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta ipsa nisi facere, earum consequatur repellat aliquid iste debitis ullam perspiciatis quae ipsum voluptates odit quo sunt similique quia libero sed.</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta ipsa nisi facere, earum consequatur repellat aliquid iste debitis ullam perspiciatis quae ipsum voluptates odit quo sunt similique quia libero sed.</p>
+        </div>
+    </div>
+    <div class="bg">
+        <img src="https://s1.hdslb.com/bfs/static/stone-free/dyn-home/assets/bg.png" alt="">
+    </div>
+</body>
+</html>
